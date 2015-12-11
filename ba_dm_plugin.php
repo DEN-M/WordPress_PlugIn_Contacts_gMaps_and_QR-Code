@@ -54,7 +54,7 @@ class BA_DM_Plugin {
 	zum Schluss ruft die Objektvariable Start-Funktion der Klasse auf
 	*/
 	private function start_QRCode_vCard_BA_DM_Plugin() {
-		include_once '/qr-code/qr_code_vcard.php';
+		include_once(plugin_dir_path(__FILE__).'/qr-code/qr_code_vcard.php');
 		$qrc_obj_vcard_ba_dm_plugin = new QRCode_vCard_BA_DM_Plugin();
 		$qrc_obj_vcard_ba_dm_plugin->start_QRCode_vCard_BA_DM_Plugin();
 	}
@@ -64,7 +64,7 @@ class BA_DM_Plugin {
 	zum Schluss ruft die Objektvariable Start-Funktion der Klasse auf
 	*/
 	private function start_QRCode_WiFi_BA_DM_Plugin() {
-		include_once '/qr-code/qr_code_wifi.php';
+		include_once(plugin_dir_path(__FILE__).'/qr-code/qr_code_wifi.php');
 		$qrc_wifi_obj_ba_dm_plugin = new QRCode_WiFi_BA_DM_Plugin();
 		$qrc_wifi_obj_ba_dm_plugin->start_QRCode_WiFi_BA_DM_Plugin();
 	}
@@ -74,7 +74,7 @@ class BA_DM_Plugin {
 	zum Schluss ruft die Objektvariable Start-Funktion der Klasse auf
 	*/
 	private function start_QRCode_Event_BA_DM_Plugin() {
-		include_once '/qr-code/qr_code_event.php';
+		include_once(plugin_dir_path(__FILE__).'/qr-code/qr_code_event.php');
 		$qrc_event_obj_ba_dm_plugin = new QRCode_Event_BA_DM_Plugin();
 		$qrc_event_obj_ba_dm_plugin->start_QRCode_Event_BA_DM_Plugin();
 	}
@@ -84,13 +84,14 @@ class BA_DM_Plugin {
 	zum Schluss ruft die Objektvariable Start-Funktion der Klasse auf
 	*/
 	private function start_gMaps_BA_DM_Plugin() {
-		include_once '/gmaps/gmaps.php';
+		include_once(plugin_dir_path(__FILE__).'/gmaps/gmaps.php');
 		$gmpas_obj_ba_dm_plugin = new GMaps_BA_DM_Plugin;
 		$gmpas_obj_ba_dm_plugin->start_gMaps_BA_DM_Plugin();
 	}
 
 	
 #-------------------------------------------------------------------------------------------------------------
+
 
 	/*
 	Erzeugt ein Link zu den Einstellungen bei Plugins hinzu
